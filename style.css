@@ -28,3 +28,111 @@
   --primary-text: #848ca8;
   --secondary-text: #c2c6d3;
 }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  font-family: "Poppins";
+  padding: 0 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  gap: 15px;
+  margin: 100px 0;
+}
+
+.card {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 15px;
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+.card .social-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.card .card-info {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.card .card-info h1 {
+  color: var(--secondary-light);
+}
+
+.card .card-info p {
+  color: var(--primary-sky);
+  margin-bottom: 10px;
+}
+
+.card .skills span {
+  padding: 5px 8px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.card .skills span:first-child {
+  background-color: var(--secondary-red);
+  color: var(--primary-red);
+}
+
+.card .skills span:nth-child(2) {
+  background-color: var(--secondary-blue);
+  color: var(--primary-blue);
+}
+
+.card .skills span:nth-child(3) {
+  background-color: var(--secondary-yellow);
+  color: var(--primary-yellow);
+}
+
+.card .skills span:nth-child(4) {
+  background-color: var(--secondary-purple);
+  color: var(--primary-purple);
+}
+
+.card .skills span:last-child {
+  background-color: var(--secondary-gray);
+  color: var(--primary-text);
+}
+
+.description p {
+  line-height: 2;
+  font-weight: 500;
+}
+
+.description p span {
+  color: var(--primary-yellow);
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links ul {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links ul li a {
+  color: var(--primary-text);
+  font-size: 28px;
+}
+
+.social-links ul li a:hover {
+  color: var(--primary-blue);
+}
